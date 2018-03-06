@@ -1,12 +1,7 @@
 
-/*
- * The Pragmatic Studio
- * http://pragmaticstudio.com
- * Copyright (c) 2011 The Pragmatic Studio
- *
- * Please don't use this exact layout and style
- * combination in your applications.
- */
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "colors";
 
@@ -190,7 +185,7 @@ ol#reviews {
   text-align: center;
   text-transform: uppercase;
   box-shadow: #ffc 0 0 4px;
-  
+
   &.notice {
     background-color: $flash-notice-color;
   }
