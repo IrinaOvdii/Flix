@@ -30,14 +30,10 @@ class MoviesController < ApplicationController
   if @movie.save
     redirect_to @movie, notice: 'Movie successfully created!'
 
-  else
-    render :new
+    else
+      render :new
+    end
   end
-end
-
-#def destroy
-  #redirect_to movies_url, danger: "I'm sorry, User, I'm afraid I can't do that!"
-#end
 
   def destroy
     @movie = Movie.find(params[:id])
@@ -49,6 +45,7 @@ private
 
   def movie_params
     params.require(:movie).
-      permit(:title, :description, :rating, :released_on, :total_gross, :cast, :director, :duration, :image_file_name)
+      permit(:title, :description, :rating, :released_on, :total_gross,
+        :cast, :director, :duration, :image_file_name)
   end
 end

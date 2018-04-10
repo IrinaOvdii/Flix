@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.3'
+ruby '2.4.1'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -59,9 +59,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :test, :development do
-  gem "rspec-rails", "3.5.0.beta3"
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
 end
 
 group :test do
-  gem "capybara", "2.7.1"
+  gem 'capybara', '~> 2.9', '>= 2.9.1'
 end
